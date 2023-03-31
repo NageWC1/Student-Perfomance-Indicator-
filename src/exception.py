@@ -10,7 +10,7 @@ def error_message_details(error,error_detail:sys):
         file_name, exc_tb.tb_lineno,str(error))
     return error_message
 
-class CustomerException(Exception):
+class CustomeException(Exception):
     def __init__(self, error_message, error_detail:sys):
         # we creating error message variable to hold the error 
         super().__init__(error_message)
